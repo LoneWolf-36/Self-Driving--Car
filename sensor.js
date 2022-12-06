@@ -24,6 +24,7 @@ class Sensor{
             };
 
             this.rays.push([start, end]);
+            console.log(this.rays);
   
         }
 
