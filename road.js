@@ -28,7 +28,7 @@ class Road {
 
     draw(ctx) {
         ctx.linewidth = 10;
-        ctx.strokeStyle = "black";
+        ctx.strokeStyle = "red";
 
         for(let i=1; i<=this.laneCount-1; i++) {
             const x = lerp(
@@ -37,7 +37,7 @@ class Road {
                 i/this.laneCount
             );
 
-            ctx.setLineDash([20,20]);
+            ctx.setLineDash([30,30]);
 
             ctx.beginPath();
             ctx.moveTo(x, this.top);
